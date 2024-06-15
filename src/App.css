@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+  padding: 2rem;
+  --clr-orange: #e54e0c
+    /* #FF4B26 */
+  ;
+  --clr-white: #fff;
+  --clr-black: #222;
+  --pink-100: #FDF6EF;
+  --gray-200: #D4D4D8;
+  --gray-300: #A1A1AA;
+  --gray-400: #71717A;
+  /* text-align: center; */
+}
+
+.TransactionDetails1 {
+  position: inherit;
+}
+
+.TransactionDetails1 .border {
+  justify-content: space-between;
+}
+
+.TransactionDetails2 {
+  justify-content: space-between;
+}
+
+.AddItem {
+  color: var(--clr-orange);
+  border: 1px solid var(--clr-orange);
+  background: transparent;
+  position: absolute;
+  right: 2em;
+}
