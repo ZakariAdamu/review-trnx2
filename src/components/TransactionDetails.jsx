@@ -23,7 +23,7 @@ function TransactionDetails() {
 				<button className="AddItem py-2 px-3 rounded-md">Add Item</button>
 			</div>
 
-			<div className="TransactionDetails2 flex mt-20 mb-5">
+			<div className="TransactionDetails2 flex mt-20 mb-6">
 				<div className="order-first">
 					<h4 className="font-medium">Transaction Details</h4>
 					<ul>
@@ -44,12 +44,12 @@ function TransactionDetails() {
 				</div>
 			</div>
 			<hr />
-			<div className="TransactionTotal-d-flex">
-				<ul className="narrations">
+			<div className="TransactionTotal flex mt-6">
+				<ul className="narrations order-first">
 					<li>Buying Price:</li>
 					<li>Seller Earnings:</li>
 				</ul>
-				<ul className="amount">
+				<ul className="amount order-last">
 					<li>NGN184,000,000.00</li>
 					<li>NGN190,000.00</li>
 				</ul>
