@@ -8,11 +8,9 @@ function App() {
 	const [count, setCount] = useState(0);
 
 	return (
-    <>
-      <ItemCategory />
-      <TransactionDetails/>
-     
-      <h2 className="text-orange-500">Happy new year!!!</h2>
+		<>
+			<ItemCategory />
+			<TransactionDetails />
 		</>
 	);
 }

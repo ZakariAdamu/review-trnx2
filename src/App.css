@@ -1,5 +1,5 @@
 #root {
-  max-width: 1180px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 2rem;
   --clr-orange: #e54e0c
@@ -37,8 +37,47 @@
   position: absolute;
   right: 5px;
 }
-.BuyerDetails{
+
+.BuyerDetails {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: space-between;
+}
+
+.BuyerDetailsForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.BuyerDetailsForm .Email{
+min-width: 20rem;
+}
+
+.BuyerDetailsForm .CountryMobile {
+  min-width: 20rem;
+  margin-top: 13.5px;
+  padding: 1px;
+  /* padding-right: 14.8rem; */
+}
+    .SubmitBtn {
+      color: white;
+      display: block;
+      margin: 4rem auto;
+      padding: 7px 6rem;
+      border-radius: 5px;
+      background: #ceced4;
+    }
+
+@media (width <=720px) {
+  .BuyerDetailsForm {
+    display: flex;
+    flex-direction: column;
+
+  }
+    .BuyerDetailsForm .CountryMobile{
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
+  
 }

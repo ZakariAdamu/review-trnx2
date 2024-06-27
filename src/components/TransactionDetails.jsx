@@ -1,4 +1,5 @@
 import React from "react";
+import BuyerDetailsForm from "./BuyerDetailsForm";
 // import styles from "./TransactionDetails.module.css";
 
 function TransactionDetails() {
@@ -24,18 +25,19 @@ function TransactionDetails() {
 			</div>
 
 			<div className="TransactionDetails2 flex mt-20 mb-6">
-				<div className="order-first">
+				<div className="transaction-breakdownRight">
 					<h4 className="font-medium">Transaction Details</h4>
 					<ul>
 						<li>Sub total:</li>
 						<li>Shipping fee:</li>
 						<li>
-							Escrow fee paid by: <span>Buyer & Seller 50/50</span>
+							Escrow fee paid by:{" "}
+							<span className="text-green-600">Buyer & Seller 50/50</span>
 						</li>
 					</ul>
 				</div>
-				<div className="order-last">
-					<h4 className="font-medium text-purple-700">
+				<div className="transaction-breakdownLeft text-right">
+					<h4 className="font-medium text-purple-700 ">
 						How the totals are calculated
 					</h4>
 					<ul>
@@ -47,53 +49,27 @@ function TransactionDetails() {
 			</div>
 			<hr />
 			<div className="TransactionTotal flex mt-6">
-				<ul className="narrations order-first">
-					<li>Buying Price:</li>
-					<li>Seller Earnings:</li>
-				</ul>
-				<ul className="amount order-last">
-					<li>NGN184,000,000.00</li>
-					<li>NGN190,000.00</li>
-				</ul>
+				<div>
+					<ul className="narrations order-first">
+						<li>Buying Price:</li>
+						<li>Seller Earnings:</li>
+					</ul>
+				</div>
+				<div className="text-right">
+					<ul className="amount order-last">
+						<li>NGN184,000,000.00</li>
+						<li>NGN190,000.00</li>
+					</ul>
+				</div>
 			</div>
 			<p className="customer-notice py-6 text-center text-gray-500">
 				All prices are in NGN, Taxes applies
 			</p>
 			<div className="BuyerContainer">
-				<h3>Buyer Details</h3>
-				<div className="BuyerDetails pt-6 pb-5">
-					<div>
-						<fieldset className="Email border border-solid border-grey-300 p-2 text-sm">
-							<legend>Email</legend>
-							<input
-								className="pr-20 py-0 focus:outline-none"
-								type="email"
-								placeholder="fidelis@yopmail.com"
-							/>
-						</fieldset>
-					</div>
-					<div className="CountryMobile border border-solid border-grey-300 py-1 px-5">
-						<input
-							className="focus:outline-none py-1"
-							type="number"
-							value="🏁 +234"
-						/>
-					</div>
-				</div>
+				<div></div>
 			</div>
-			<footer>
-				<div>
-					<input type="checkbox" id="agree_to_terms" />
-					<label for="agree_to_terms">
-						I have read and agree to the{" "}
-						<a href="terms_and_conditions.html">
-							safeTra Terms & Conditions <span>and</span>Privacy Policy
-						</a>
-						.
-					</label>
-				</div>
-				<button className="ActionBtn">Start Transaction</button>
-			</footer>
+			<BuyerDetailsForm />
+			<footer></footer>
 		</div>
 	);
 }
